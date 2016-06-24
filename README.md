@@ -4,14 +4,32 @@ Website URL: [http://ec2-52-36-2-69.us-west-2.compute.amazonaws.com/][1]
 Public IP: 52.36.2.69  
 Port: 2200
 
-## Table of Contents  
+## Table of Contents
+
+* [Software Summary](#Software-summary)
 * [Configuration Summary](#configuration-summary)
 * [Additional Features](#additional-features)
 * [Resources Used](#resources-used)
 * [Configurated By](#configurated-by)
 
-## Configuration Summary
+## Software Summary
 
+* [Book Catalog](https://github.com/brianquach/udacity-nano-fullstack-catalog): Book catalog web application.
+* [Apache2](https://httpd.apache.org/): HTTP Web Server used host the book catalog web app.
+* [Flask](http://flask.pocoo.org/): Web framework used by book catalog web app.
+* [PostgreSQL](https://www.postgresql.org/): Back-end database for the book catalog web app.
+* [Psycopg](http://initd.org/psycopg/): PostgreSQL adapter for Python.
+* [Virtualenvs](http://docs.python-guide.org/en/latest/dev/virtualenvs/): Create isolated Python environment
+* [Mod_wsgi](http://flask.pocoo.org/docs/0.11/deploying/mod_wsgi/): Tool used to server Python web applications.
+* [PIP](https://pip.pypa.io/en/stable/quickstart/): Used to install listed depedencies in requirements.txt file for book catalog.
+* [GIT](https://git-scm.com/): Distributed version souce control system.
+* [Finger](http://www.unix.com/man-page/freebsd/1/finger/): User look-up utility.
+* [Network Time Protocol](http://www.ntp.org/): Synchronizes time over a network.
+* [Unattended-upgrades](https://help.ubuntu.com/lts/serverguide/automatic-updates.html): Automatic package and security updates.
+* [Glances](https://nicolargo.github.io/glances/): Operating System monitoring tool.
+* [Fail2ban](http://www.fail2ban.org/wiki/index.php/Main_Page): Server security tool.
+
+## Configuration Summary
 
 ## Additional Features
 
