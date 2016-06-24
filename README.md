@@ -35,27 +35,28 @@ Port: 2200
 1. Update and upgrade current packages.
 2. Change **SSH** port to 2200.
 3. Set **UFW** to allow only ports 2200, 80, and 123.
-4. Create user **grader** and given sudo access rights.
+4. Create user **grader**, set a strong password, and give sudo access rights by using `visudo`.
 5. Setup **SSH** for user grader.
-6. Add line `127.0.1.1 ip-10-20-33-99` to `/etc/hosts` to solve sudo error for grader.
-7. Timezone already set to UTC; check using `date` or `date +%Z`.
-8. Install **NTP** and enable time-synchronization with **timedatectl**.
-9. Install **Apache2**, **PostgreSQL**, **Flask**, and **mod_wsgi**.
-10. Install **git** to clone book catalog repository.
-11. Install PIP and run `pip install -r requirements.txt`
-12. Switch user to **postgres**, and create **catalog_access_role** with CreateDB and No login access rights in **psql**.
-13. Create **catalog_db** with **catalog_access_role** as owner.
-14. Create user **catalog** and grant **catalog_access_role** to **catalog**.
-15. Run `python create_db` to initialize application database.
-16. Install **virtualenvs** and create virtual environment for catalog web app.
-17. Add **catalog.wsgi** to catalog web app.
-18. Add vhost configuration for book catalog web app.
-19. Update catalog application code to use database connection string: `postgresql://catalog@localhost/catalog_db`.
-20. Update catalog application code to use absolute paths instead of relative paths (mod_wsgit requirement).
-21. Update javascript to redirect to correct url (ie. replace localhost:8080 with AC2 url http://ec2-52-36-2-69.us-west-2.compute.amazonaws.com/) for **OAuth**.
-22. Create new group called **catalog_site** and give R,W,X permission as group owner to `/var/www/catalog`.
-23. Add user **www-data** to **catalog_site** group.
-24. Add [additional features](#additional-features).
+6. Disable Root login.
+7. Add line `127.0.1.1 ip-10-20-33-99` to `/etc/hosts` to solve sudo error for grader.
+8. Timezone already set to UTC; check using `date` or `date +%Z`.
+9. Install **NTP** and enable time-synchronization with **timedatectl**.
+10. Install **Apache2**, **PostgreSQL**, **Flask**, and **mod_wsgi**.
+11. Install **git** to clone book catalog repository.
+12. Install PIP and run `pip install -r requirements.txt`
+13. Switch user to **postgres**, and create **catalog_access_role** with CreateDB and No login access rights in **psql**.
+14. Create **catalog_db** with **catalog_access_role** as owner.
+15. Create user **catalog** and grant **catalog_access_role** to **catalog**.
+16. Run `python create_db` to initialize application database.
+17. Install **virtualenvs** and create virtual environment for catalog web app.
+18. Add **catalog.wsgi** to catalog web app.
+19. Add vhost configuration for book catalog web app.
+20. Update catalog application code to use database connection string: `postgresql://catalog@localhost/catalog_db`.
+21. Update catalog application code to use absolute paths instead of relative paths (mod_wsgit requirement).
+22. Update javascript to redirect to correct url (ie. replace localhost:8080 with AC2 url http://ec2-52-36-2-69.us-west-2.compute.amazonaws.com/) for **OAuth**.
+23. Create new group called **catalog_site** and give R,W,X permission as group owner to `/var/www/catalog`.
+24. Add user **www-data** to **catalog_site** group.
+25. Add [additional features](#additional-features).
 
 ## Additional Features
 
