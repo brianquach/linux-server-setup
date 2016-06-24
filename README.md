@@ -33,10 +33,10 @@ Port: 2200
 ## Configuration Summary
 
 1. Update and upgrade current packages.
-2. Change SSH port to 2200.
-3. Set UFW to allow only ports 2200, 80, and 123.
+2. Change **SSH** port to 2200.
+3. Set **UFW** to allow only ports 2200, 80, and 123.
 4. Create user **grader** and given sudo access rights.
-5. Setup SSH for user grader.
+5. Setup **SSH** for user grader.
 6. Add line `127.0.1.1 ip-10-20-33-99` to `/etc/hosts` to solve sudo error for grader.
 7. Timezone already set to UTC; check using `date` or `date +%Z`.
 8. Install **NTP** and enable time-synchronization with **timedatectl**.
@@ -54,7 +54,8 @@ Port: 2200
 20. Update catalog application code to use absolute paths instead of relative paths (mod_wsgit requirement).
 21. Update javascript to redirect to correct url (ie. replace localhost:8080 with AC2 url http://ec2-52-36-2-69.us-west-2.compute.amazonaws.com/) for **OAuth**.
 22. Create new group called **catalog_site** and give R,W,X permission as group owner to `/var/www/catalog`.
-23. Add [additional features](#additional-features).
+23. Add user **www-data** to **catalog_site** group.
+24. Add [additional features](#additional-features).
 
 ## Additional Features
 
