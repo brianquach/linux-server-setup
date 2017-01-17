@@ -1,4 +1,5 @@
 # Linux Server Configuration
+This is a how-to guide on how to configure a baseline Amazon Web Service Ubuntu server into a full-fledged Apache web host that serves the [book catalog web app](https://github.com/brianquach/book-catalog).  
 
 Website URL: [http://ec2-52-36-2-69.us-west-2.compute.amazonaws.com/][1]  
 Public IP: 52.36.2.69  
